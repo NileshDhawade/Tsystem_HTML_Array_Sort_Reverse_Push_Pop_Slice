@@ -9,21 +9,26 @@
     <div id="d1"></div>
     <script>
 
-
+        var names = ['aa', 'cc', 'rr', 'dd'];
+        names.push('bb');
+        names.sort();
+        
         // array of numbers
-        var numbers = [45, 55, 65, 77, 88, 123];
-        numbers.push(555);
-        numbers.pop(); // will remove the very last element added
-        numbers.sort();  // not sure ..ask to teacher
-        numbers.reverse();
-        numbers.slice(); // not sure..ask to teacher
+        var numbers = [66,34,23,12,2];
+       // numbers.push(555);
+        // numbers.pop(); // will remove the very last element added
+         
+        numbers.sort(); 
+       // numbers.push(1);
+        // numbers.reverse();
+        // numbers.slice(0,5); 
 
-        var data = "<ol>";
-        for (let i = 0; i < numbers.length; i++) {
-            data += "<li>" + numbers[i] + "</li>"
-        }
-        data += "</ol>";
-        document.getElementById("d1").innerHTML = data;
+        //var data = "<ol>";
+        //for (let i = 0; i < numbers.length; i++) {
+        //    data += "<li>" + numbers[i] + "</li>"
+        //}
+        //data += "</ol>";
+        document.getElementById("d1").innerHTML = names;
 
     </script>
 
